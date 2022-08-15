@@ -1,1 +1,2 @@
-Access Denied
+<?php 
+// silence is golden
