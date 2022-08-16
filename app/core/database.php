@@ -52,10 +52,20 @@ class Database
                     `date` datetime DEFAULT NULL,
                     PRIMARY KEY (`id`),
                     KEY `email` (`email`),
+                    KEY `firstname` (`firstname`),
+                    KEY `lastname` (`lastname`),
                     KEY `date` (`date`)
                     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
         ";
 
+        $this->query($query);
+    }
+
+    public function insert_data()
+    {
+        $query = "
+            INSERT INTO `users` (`id`, `email`, `firstname`, `lastname`, `role`, `password`, `date`) VALUES (NULL, 'user@user.com', 'user', 'doe', '1', 'password', '2022-08-01 19:05:04'), (NULL, 'mary@email.com', 'mary', 'doe', '1', 'password', '2022-08-01 19:05:04');
+        ";
         $this->query($query);
     }
 }

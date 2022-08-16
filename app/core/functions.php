@@ -16,13 +16,13 @@ function set_value(string $key)
     return '';
 }
 
-// function redirect(string $link)
-// {
-//     header("Location: " . ROOT . "/" . $link);
-//     die;
-// }
+function redirect(string $link)
+{
+    header("Location: " . ROOT . "/" . $link);
+    die;
+}
 
-function message(string $msg = "", bool $erase = false)
+function message($msg = "", $erase = false)
 {
     if (!empty($msg)) {
         $_SESSION['message'] = $msg;

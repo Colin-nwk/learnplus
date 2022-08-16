@@ -7,7 +7,7 @@
 // show($_SERVER);
 
 
-define("APPNAME", "learnplus");
+define("APPNAME", "LearnPlus");
 define("APPDESC", "Free and paid tutorials");
 define("APPVERSION", "1.0.0");
 
